@@ -1,33 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='container'>
+        <video className='container__video' src="video.mp4" muted loop autoPlay></video>
+        <div className='container__text'>
+          <div className='container__text-block'>We,re here </div> 
+          <div className='container__empty-block'></div> 
+          <div className='container__text-block'>to make healthy</div>
+          <div className='container__empty-block'></div> 
+          <div className='container__text-block'>living effortless, so you can </div>
+          <div className='container__empty-block'></div> 
+          <div className='container__text-block'>live longer and happier</div>
+          <div className='container__empty-block'></div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
